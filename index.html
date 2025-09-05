@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1"/>
+        <title>Loan Application - Pixel6</title>
+        <link rel="stylesheet"   href="style.css">
+    </head>
+    <body>
+        <main class="container">
+            <h1>Loan Application</h1>
+            <form id="loanForm" novalidate>
+                <div class="form-row">
+                    <label for="fullName">Full Name</label>
+                    <input id="fullName" name="fullName" type="text"  placeholder="eg. Rahul Sharma" required />
+         em           <small class="error" id="nameError"></small>
+
+
+                </div>
+                <div class="form-row">
+                   <label for="email">Email</label>
+                   <input id="email" name="email" type="email" placeholder="you@example.com" required />
+                   <small class="error" id="emailError"></small>
+                </div>
+                <div class="form-row">
+                    <label for="Pan">Pan</label>
+                    <input id="pan" name="Pan" type="text" maxlength="10" placeholder="ABCDE1234F" required />
+                    <small class="error" id="panError"></small>
+                </div>
+
+                <div class="form-row">
+                    <label for="loanAmount" >Loan Amount</label>
+                    <input id="loanAmount" name="loanAmount" type="text" inputmode="numeric" placeholder="e.g. 480000" required />
+                    <small class="error" id="amountError"></small>
+                    <div class="extra-info">
+                        <span id="amountWords"> </span>
+                        <span id="emiInfo"></span>
+                    </div>
+                    
+
+                </div>
+                <div class="form-row actions">
+                        <button id="submitBtn" type="submit">Submit</button>
+
+                    </div>
+
+                
+            </form>
+            <footer class="note">
+                <p>Make sure to double-check validations before submitting.</p>
+            </footer>
+
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

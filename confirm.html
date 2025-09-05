@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Confirm-Pixel6</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <main class="container">
+    <h1>Confirmation</h1>
+
+    <div id="messageBlock" class="message-block">
+      <!-- Message with first name and email will be injected here -->
+    </div>
+
+    <div id="otpBlock" class="otp-block">
+      <label for="otpInput">Enter 4-digit verification code</label>
+      <input id="otpInput" maxlength="4" inputmode="numeric" placeholder="e.g. 1234" />
+      <small class="error" id="otpError"></small>
+      <div class="actions">
+        <button id="validateBtn">Validate</button>
+      </div>
+      <small id="attemptsLeft" class="hint"></small>
+    </div>
+
+    <div id="resultBlock" class="result-block" aria-live="polite"></div>
+
+  </main>
+
+  <script src="script.js"></script>
+    </body>
+</html>

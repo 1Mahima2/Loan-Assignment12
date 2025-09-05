@@ -21,7 +21,7 @@ This is a simple loan application web project consisting of two main pages:
 ## Technologies Used
 - HTML5
 - CSS3 (with CSS variables for theming)
-- JavaScript (vanilla)
+- JavaScript 
 
 ## How to Use
 1. Open `index.html` in a modern web browser.
@@ -43,5 +43,8 @@ This is a simple loan application web project consisting of two main pages:
 - Verify redirection behavior on success and failure.
 - Test responsiveness on different screen sizes.
 
-## License
-This project is provided as-is for demonstration purposes.
+ # Deploy
+ vercel:- https://loan-assignment12.vercel.app/
+
+Github:- https://github.com/1Mahima2/Loan-Assignment12
+ 
